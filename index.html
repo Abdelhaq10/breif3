@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>RentMeNow</title>
+</head>
+<body>
+    <header>
+     <div class="nav-log"> 
+        <H1 class="logo"><span>R</span>ent<span>M</span>e<span>N</span>ow</H1>
+        <img id="menu" src="images/425-4251166_menu-bar-icon-white-clipart.png">
+     </div>
+      
+        <ul class="list">
+             <img id="close" src="images/icons8-close-30.png">
+            <li><a href="">Home</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Reservation</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="front-fram">
+            <!-- <H1 class="Title">RENT ME NOW</H1> -->
+            
+            <div class="content">
+                <div class="quote">Instantly book cars near you</div> </h3>
+                <div class="text">Need a car? Oh, you’ve come to the right place.<br> Book cars on demand by the hour or day.<br> Join instantly, drive in minutes.</div>
+                <a href="">Reserve Now</a>
+            </div>    
+        </section>
+        <section class="center-fram">
+            
+            <div class="work">
+                <p class="second-title">How RentMeNow Work</p>
+            </div>
+            <div class="how-block">
+                <div class="team">
+                    <div  class="pic1"><img src="./images/rent-icon.png" class="img" alt="" srcset=""></div>
+                    <h4 class="desc"> If you need a car rental quickly,<br> <strong>RentMeNow</strong> has you covered. With fast<br> and easy online access for mobile booking, you <br> can  book a car rental to ensure your travels are </BR> not interrupted.</h4>
+                </div>
+                <div class="team">
+                    <div  class="pic2"><img src="./images/rent-a-car.png" class="img" alt="" srcset=""></div>
+                    <h4 class="desc"> Make your move less stressful with a <br> rental from <strong>RentMeNow</strong>. <br> <strong>RentMeNow</strong> offers rentals of all sizes including SUV's, pickup <br> trucks and cargo vans to help move personal belongings of every size.</h4>
+                </div>
+                <div class="team">
+                    <div  class="pic3"><img src="./images/car-rent (1).png" class="img" alt="" srcset=""></div>
+                    <h4 class="desc"><strong>RentMeNow</strong> offers rental deals on a wide <br> range  of car rentals to make your one way <br> trip easy and comfortable. <br> Whether it is getting to the airport <br> or driving from one city to another,<br> <strong>RentMeNow</strong> makes one way car rental easy <br> and affordable. </h4>
+                </div>
+            </div>
+                <div class="explore"><a href="./Gallery.html">See Our Cars</a></div>
+                
+            
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+         <div class="block">
+             <ul>
+                 <li class="text">RentMeNow</li>
+                 <li>2021</li>
+             </ul>
+         </div>  
+         <div class="block">
+            <ul>
+                <li class="text">Company</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div> 
+        <div class="block">
+            <ul>
+                <li class="text">Follow Us</li>
+                   <li>
+                       <div class="list">
+                        <div class="media1"></div>
+                        <div class="media2"></div>
+                        <div class="media3"></div>
+                       </div>
+                   </li> 
+            </ul>
+        </div> 
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        // $(document).ready(function(){
+        //     $('.close').on('click',function(){
+        //     $('.list').css("display","none");
+        // });
+        // $('.menu').on('click',function(){
+        //     $('.list').css("display","flex");
+        // });
+        // })
+      var clo=document.getElementById("close");
+      var menu=document.getElementById("menu");
+            clo.addEventListener("click",function(){
+                document.querySelector(".list").style.display="none";
+            });
+            var menu=document.getElementById("menu");
+            menu.addEventListener("click",function(){
+                document.querySelector(".list").style.display="flex";
+            })
+    </script>
+</body>
+</html>
