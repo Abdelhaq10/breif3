@@ -153,8 +153,8 @@ header .list li :hover{letter-spacing: 2px;}
     background-color: #4A4F52;
 }
 .pic1{
-    width: 100px;
-    height: 100px; 
+    width: 200px;
+    height: 200px; 
     border-radius: 50%;
     /* background: url("./images/rent-icon.png") no-repeat; */
     background-color: #b6adae;
@@ -171,9 +171,9 @@ header .list li :hover{letter-spacing: 2px;}
     height: 70%
 }
 .pic2{
-    width: 100px;
-    height: 100px; 
-    border-radius: 20%;
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%;
     background-color: #b6adae;
     background-size: cover;
     background-position: center;
