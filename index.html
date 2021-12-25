@@ -96,21 +96,15 @@
 
 
     <script>
-        // $(document).ready(function(){
-        //     $('.close').on('click',function(){
-        //     $('.list').css("display","none");
-        // });
-        // $('.menu').on('click',function(){
-        //     $('.list').css("display","flex");
-        // });
-        // })
       var clo=document.getElementById("close");
       var menu=document.getElementById("menu");
             clo.addEventListener("click",function(){
+                menu.style.display="block";
                 document.querySelector(".list").style.display="none";
             });
             var menu=document.getElementById("menu");
             menu.addEventListener("click",function(){
+                menu.style.display="none";
                 document.querySelector(".list").style.display="flex";
             })
     </script>

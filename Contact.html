@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.css">
+    <title>Contact us</title>
+</head>
+<body>
+    <header>
+        <div class="nav-log"> 
+           <H1 class="logo"><span>R</span>ent<span>M</span>e<span>N</span>ow</H1>
+           <img id="menu" src="images/425-4251166_menu-bar-icon-white-clipart.png">
+        </div>
+         
+           <ul class="list">
+                <img id="close" src="images/icons8-close-30.png">
+               <li><a href="">Home</a></li>
+               <li><a href="">Gallery</a></li>
+               <li><a href="">Reservation</a></li>
+               <li><a href="">Contact</a></li>
+           </ul>
+           
+       </header>
+       <main>
+           <section class="background">
+            
+            <div class="content">
+                <div class="quote">Contact Us</div> </h3>
+                <div class="text">Please Send Your Message Below</div>
+            </div> 
+            <div class="block-center">
+                <div class="names">
+                    <input type="text" placeholder="First Name" id="fname">
+                    <input type="text" placeholder="Last Name" id="lname">
+                </div>
+
+                <input type="email" placeholder="Email" id="mail">
+                <input type="text" placeholder="Subject" id="subj">
+                <textarea name="message" id="mssg" cols="20" rows="6" placeholder=" Your Message" ></textarea>
+                <input type="button" value="Send" id="btn">
+
+            </div>
+            <div id="popup">
+                <img src="./images/icons8-close-30.png" alt="" id="popdown">
+                <div id="mssgbox"></div>
+            </div>
+
+           </section>
+       </main>
+       <footer>
+        <div class="footer">
+         <div class="block">
+             <ul>
+                 <li class="text">RentMeNow</li>
+                 <li>2021</li>
+             </ul>
+         </div>  
+         <div class="block">
+            <ul>
+                <li class="text">Company</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div> 
+        <div class="block">
+            <ul>
+                <li class="text">Follow Us</li>
+                   <li>
+                       <div class="list">
+                        <div class="media1"></div>
+                        <div class="media2"></div>
+                        <div class="media3"></div>
+                       </div>
+                   </li> 
+            </ul>
+        </div> 
+        </div>
+    </footer>
+
+
+
+    <script>
+var fname= document.getElementById("fname");
+var lname= document.getElementById("lname");
+var mail=document.getElementById("mail");
+var subj=document.getElementById("subj");
+var mssg=document.getElementById("mssg");
+var btn=document.querySelector("#btn");
+var pop=document.querySelector("#popup");
+var isfnamevalid = -1;
+var islnamevalid =-1;
+var issubjvalid =-1;
+var isemailvalid=-1;
+ var ismssgvalid=-1;
+        fname.addEventListener("blur",function()
+        {
+            var exp=/^[a-zA-Z0-9._-]+@[a-z0-9]+\.[a-z]{2,4}$/;
+                if(fname.value ==="")
+                {
+                    fname.style.border = "2px solid red";
+                    
+                }
+                else if(fname.value !="")
+                {
+                    fname.style.border = "2px solid green";
+                    isfnamevalid=1;
+                   
+                }
+            });
+            lname.addEventListener("blur",function()
+            {
+            
+               if(lname.value ==="")
+                {
+                        lname.style.border = "2px solid red";
+                }
+               else if(lname.value !="")
+                {
+                       lname.style.border = "2px solid green";
+                       islnamevalid=1;
+                }
+            });
+            mail.addEventListener("blur",function(){
+                let regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+                if(!regex.test(mail.value))
+                {
+                   mail.style.border="2px solid red";
+                }
+                else{
+                    mail.style.border = "2px solid green";
+                    isemailvalid=1;
+                }
+            });
+            subj.addEventListener("blur",function(){
+                if(subj.value==="")
+                {
+                    subj.style.border="2px solid red"; 
+                }
+                else{
+                    subj.style.border="2px solid green"; 
+                    issubjvalid=1;
+                }
+            });
+            mssg.addEventListener("blur",function(){
+                if(mssg.value==="")
+                {
+                    mssg.style.border="2px solid red"; 
+                }
+                else{
+                    mssg.style.border="2px solid green"; 
+                    ismssgvalid=1;
+                }
+            });
+            btn.addEventListener("click",function()
+            {
+                if(ismssgvalid == 1 && islnamevalid==1 && isfnamevalid==1 && issubjvalid==1 && isemailvalid==1)
+                {
+                    pop.style.display="block";
+                    document.querySelector("#mssgbox").innerHTML= fname.value + " " + lname.value + " : " + subj.value + " <br>" + "Email : " +mail.value +"<br>" + mssg.value + ".";
+                }
+                else {
+                    pop.style.display="block";
+                    document.querySelector("#mssgbox").innerHTML= "Something Went Wrong <br> Try Again.";
+                }
+               
+            })
+            document.querySelector("#popdown").addEventListener("click",function(){
+                pop.style.display="none";
+            });
+
+
+            var clo=document.getElementById("close");
+      var menu=document.getElementById("menu");
+            clo.addEventListener("click",function(){
+                menu.style.display="block";
+                document.querySelector(".list").style.display="none";
+            });
+            var menu=document.getElementById("menu");
+            menu.addEventListener("click",function(){
+                menu.style.display="none";
+                document.querySelector(".list").style.display="flex";
+            });
+    </script>
+</body>
+</html>
