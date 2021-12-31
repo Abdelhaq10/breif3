@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Gothic+A1:wght@300&family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+html,body{
+    width: 100%;
+    height: 100%;
+    /* background-color: #162179; */
+}
+body{
+    display:grid;
+    position: absolute;
+    grid-template-rows: auto 1fr auto; 
+}
+.nav-log{
+    display: flex;
+    gap: 40px;
+}
+::-webkit-scrollbar{display: none;}
+*{
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+main{
+    position: relative; 
+   
+}
+
+footer{
+    background-color: chocolate;
+    height: 120px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    border: chartreuse solid 3px;
+    padding: 27px 0px;
+    width: 100%;
+    background: #D80E12;
+}
+header{
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    z-index: 10000;
+    align-items: center;
+    justify-content: space-between;
+  
+    
+}
+header .list{
+    /* position: relative; */
+    display: flex;
+    margin-right: 180px;
+    align-items: center;
+    justify-content:space-around ; 
+}
+header .list li{
+    list-style: none;
+    margin-left: 50px;
+    /* display: inline-block; */
+}
+header .list li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    
+}
+header .list li :hover{letter-spacing: 2px;}
+.logo{
+    margin-left: 50px;
+    font-size: 25px;
+    color: black;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    /* font-family: ; */
+}
+.logo span{
+    
+    font-size: 35px;
+    color: white;
+}
+/* mobile icons */
+#menu, #close{
+    display: none;
+    width: 30px;
+    height: 30px;
+   }
+   
+   .container{
+       border:blue solid 2px;
+       /* top: 698px; */
+       /* height: 120px; */
+       padding: 10px;
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       flex-direction: column;
+       flex-wrap: wrap;
+   }
+   .title{
+       padding: 20px;
+   }
+   .drop-block{
+       /* width: 100%; */
+       display: flex;
+       justify-content: space-evenly;
+       flex-wrap: wrap;
+       border: coral solid;
+       align-items: center;
+       gap: 100px;
+       /* padding: 20px; */
+   }
+   .dropdown{
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 4px 4px #ccc;
+}
+.drop-block label{
+    font-size: 1.2rem;
+    font-family: 'Play', sans-serif;
+    padding-top: 5px;
+}
+.radio-block label{
+    font-size: 1.2rem;
+    font-family: 'Play', sans-serif;
+}
+.radio-block input{
+    margin-top: 5px;
+}
+.block{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    border:blue solid 2px;
+}
+.radio-block{
+    border: springgreen solid;
+    padding: 20px;
+    /* width: 100%; */
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.types{
+    border: crimson solid;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.btn-add{
+   text-align: center;
+   width: 150px;
+   height: 40px;
+   cursor: pointer;
+   display: block;
+   margin: 20px 40px ;
+   font-size: 18px;
+    border-radius: 30px;
+    background-color: crimson;
+}
+.duree{
+    display: flex;
+    margin-top: 20px;
+    gap: 40px;
+}
+.duree label{
+    font-size: 1.4rem;
+    font-family: 'Play', sans-serif;
+    padding-top: 5px;
+    font-weight: bold;
+}
+#nbjour{
+    padding: 10px;
+    border: solid #000000;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.second-section{
+    border: black solid;
+    display: flex;
+    justify-content: center;
+    padding: 30px 40px;
+}
+.cars-book{
+    margin: 10px;
+    border:1px solid black;
+    min-width: 900px;
+ 
+}
+.section-title{
+    font-family:'Play', sans-serif; 
+    font-weight: normal;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.reservation-block{
+    display: flex;
+    justify-content: center;
+}
+.cars-list{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+.reservation-title{
+    width: 40%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: black solid 1px;
+    margin-right: 1.5rem;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.reservation-type{
+    width: 20%;
+}
+.reservation-price{
+    width: 20%;
+    font-size: 1.1rem;
+}
+.reservation-nbjour{
+    width: 40%;
+}
+.total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.total-title{
+    font-weight: bold;
+    font-size: 20px;
+    color: #D80E12;
+    margin-right: 20px;
+}
+.total-price{
+    color: #000000;
+    font-size: 17px;
+}
+.rent-btn{
+    display: block;
+    background-color: crimson;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;cursor: pointer;
+    width: 100px;
+    padding: 10px 20px;
+    margin: 40px auto 60px auto;
+}
+   @media (max-width:560px) {
+    header{
+        /* height: 70px; */
+        background:grey;
+    }
+      header .logo{
+         width: 50px;
+         height:50px;
+         margin-left: 12px;
+         padding: 10px 0px;
+     }
+   
+      header .list{
+          border: 1px solid black;
+          position: fixed;
+          inset: -2% 0 0 55%; 
+          flex-direction:column;
+          align-items: center;
+          background: rgb(155, 164, 170, 0.60);
+          width: 55%;
+          justify-content: start;
+          /* display: none; */
+          z-index: 2;
+     }
+     header .list li{
+      justify-content: center;
+      margin-bottom: 20px;
+      margin-top: 25PX;
+      margin-right:100px;
+      width: 50%;
+      text-align: center;
+      align-self: center;
+      align-content: center;
+  }
+  header .list :hover{
+      color: #D80E12;
+  }
+  header .list li a{
+      color: black;
+      font-size: 18px;
+      font-style: oblique;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  #menu, #close{
+    display: block;
+}
+#menu{
+    width: 45px;
+    height: auto;
+}
+.nav-log{
+    gap: 380px;
+}
+#close{
+   position: relative;
+  left: 19%;
+  top: 25px;
+    width: 40px;
+    height: auto;
+}
+
+.container{
+    /* position: relative; */
+     /* top: 1px;  */
+    border: #D80E12 solid 2px;
+    /* background-color: aqua; */
+}
+}

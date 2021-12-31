@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="./book.css">
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="nav-log"> 
+                <H1 class="logo"><span>R</span>ent<span>M</span>e<span>N</span>ow</H1>
+                <img id="menu" src="images/425-4251166_menu-bar-icon-white-clipart.png">
+             </div>
+              
+                <ul class="list">
+                     <img id="close" src="images/icons8-close-30.png">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Reservation</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+        </div>
+        
+       </header>
+       <main >
+           <section class="container">
+               <div class="drop-block">
+                <div class="block">
+                    <label for="Bv">Boite vitesse : </label>
+                    <select class="dropdown" id="Bv">
+                        <option value="19">Automatique</option>
+                        <option value="0">Manuelle</option>
+                 </select>
+                   </div>
+                   <div class="block">
+                    <label for="Engine"> Engines : </label>
+                    <select class="dropdown" id="Engine">
+                        <option value="5">Electrique</option>
+                        <option value="9">Hybrid</option>
+                        <option value="14">Essence</option>
+                        <option value="21">Diesel</option>
+                 </select>
+                   </div>
+               </div>
+               <h2 class="title">TYPE</h2>
+            <div class="radio-block">
+                <div class="types">
+                    <input type="radio" class="type" name="type" id="moto" value="10">
+                    <label for="moto" class="label">Moto</label>
+               </div>
+               <div class="types">
+                    <input type="radio" class="type" name="type" id="citadine" value="12">
+                    <label for="citadine" class="label">Citadine</label>
+                </div>
+                <div class="types">
+                    <input type="radio" class="type" name="type" id="compact" value="14">
+                    <label for="compact" class="label">Compact</label>
+                </div>
+                <div class="types">
+                    <input type="radio" class="type" name="type" id="berline" value="20">
+                    <label for="berline" class="label"> Berline</label>
+                </div>
+                <div class="types">
+                    <input type="radio" class="type" name="type" id="utilitaire" value="16">
+                    <label for="utilitaire" class="label">Utilitaire</label>
+                </div>
+                <div class="types">
+                    <input type="radio" class="type" name="type" id="enginCh" value="900">
+                    <label for="enginCh" class="label">Engin de Chantier</label>
+                </div>
+                 <div class="types">
+                    <input type="radio" class="type" name="type" id="camion" value="250">
+                    <label for="camion" class="label">Camion</label>
+                </div>
+            </div>
+
+            <div class="duree">
+                <label for="nbjour">Number of Jours : </label>
+                <input type="number" name="nbjour" id="nbjour" value="1">
+            </div>
+        
+                <button class="btn-add" id="btn" type="button">Book Now</button>
+          
+
+           </section>
+           <section class="second-section">
+               <div class="cars-book">
+                <h2 class="section-title">Reservation Book</h2>
+                
+               
+            <!-- <div class="cars-book">
+                <h2 class="section-title">Reservation Book</h2> -->
+             <div class="reservation-block">
+                 <span class="reservation-title reservation-type">Type</span>
+                 <span class="reservation-title reservation-price">Price</span>
+                 <span class="reservation-title reservation-nbjour">Number Jours</span>
+             </div>
+             <div class="cars-list">
+             </div> 
+             <div class="total">
+                 <strong class="total-title">Total</strong>
+                 <span id="tot" class="total-price">0.00£</span>
+             </div>
+             <button  class="rent-btn">Rent</button>
+            </div>
+           </section>
+   
+       </main>
+  
+    <footer>
+
+    </footer>
+    <script src="./rent.js"></script>
+</body>
+</html>
