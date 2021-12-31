@@ -29,15 +29,60 @@ main{
 }
 
 footer{
-    background-color: chocolate;
-    height: 120px;
+    height: 200px;
+    background-image: linear-gradient(25deg, #252b32, #b83b35, #a2342d, #252b32);
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+.block ul li {
+    list-style: none;
+}
+.block ul .text{
+    font-family: 'Play', serif;
+    color: white; 
+   
+}
+.media1{
+    background-image: url("./images/facebookIcon.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid ;
+}
+.media2{
+    background-image: url("./images/instagram.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid ;
+}
+.media3{
+    background-image: url("./images/twitterIcon.png");
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 1px solid ;
+}
+.list{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 .content{
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    border: chartreuse solid 3px;
     padding: 27px 0px;
     width: 100%;
     background: #D80E12;
@@ -56,7 +101,6 @@ header{
     
 }
 header .list{
-    /* position: relative; */
     display: flex;
     margin-right: 180px;
     align-items: center;
@@ -65,7 +109,6 @@ header .list{
 header .list li{
     list-style: none;
     margin-left: 50px;
-    /* display: inline-block; */
 }
 header .list li a{
     text-decoration: none;
@@ -81,8 +124,6 @@ header .list li :hover{letter-spacing: 2px;}
     margin-left: 50px;
     font-size: 25px;
     color: black;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-    /* font-family: ; */
 }
 .logo span{
     
@@ -97,28 +138,23 @@ header .list li :hover{letter-spacing: 2px;}
    }
    
    .container{
-       border:blue solid 2px;
-       /* top: 698px; */
-       /* height: 120px; */
-       padding: 10px;
+       padding: 40px;
        display: flex;
        justify-content: space-evenly;
        align-items: center;
        flex-direction: column;
-       flex-wrap: wrap;
+     
    }
    .title{
        padding: 20px;
    }
    .drop-block{
-       /* width: 100%; */
        display: flex;
        justify-content: space-evenly;
        flex-wrap: wrap;
-       border: coral solid;
        align-items: center;
        gap: 100px;
-       /* padding: 20px; */
+       padding: 20px;
    }
    .dropdown{
     width: 150px;
@@ -143,19 +179,17 @@ header .list li :hover{letter-spacing: 2px;}
     display: flex;
     gap: 30px;
     text-align: center;
-    border:blue solid 2px;
+    
 }
 .radio-block{
-    border: springgreen solid;
+   
     padding: 20px;
-    /* width: 100%; */
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
     gap: 50px;
 }
 .types{
-    border: crimson solid;
     display: flex;
     justify-content: space-evenly;
     gap: 15px;
@@ -173,6 +207,7 @@ header .list li :hover{letter-spacing: 2px;}
 }
 .duree{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
     gap: 40px;
 }
@@ -189,15 +224,17 @@ header .list li :hover{letter-spacing: 2px;}
     font-weight: bold;
 }
 .second-section{
-    border: black solid;
+    
     display: flex;
     justify-content: center;
     padding: 30px 40px;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 .cars-book{
     margin: 10px;
     border:1px solid black;
-    min-width: 900px;
+    /* min-width: 900px; */
  
 }
 .section-title{
@@ -234,7 +271,13 @@ header .list li :hover{letter-spacing: 2px;}
     font-size: 1.1rem;
 }
 .reservation-nbjour{
-    width: 40%;
+    width: 20%;
+}
+.reservation-total{
+    width: 20%;
+}
+.reservation-totals{
+    width: 20%;
 }
 .total{
     text-align: end;
@@ -282,7 +325,7 @@ header .list li :hover{letter-spacing: 2px;}
           background: rgb(155, 164, 170, 0.60);
           width: 55%;
           justify-content: start;
-          /* display: none; */
+          display: none;
           z-index: 2;
      }
      header .list li{
@@ -323,9 +366,68 @@ header .list li :hover{letter-spacing: 2px;}
 }
 
 .container{
+    width: auto;
     /* position: relative; */
      /* top: 1px;  */
     border: #D80E12 solid 2px;
     /* background-color: aqua; */
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.drop-block{
+    gap: 30px;
+}
+.types{
+    gap: 10px;
+}
+
+.radio-block{
+    gap: 20px;
+}
+
+
+
+
+.reservation-title{
+    width: 40%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    border-bottom: black solid 1px;
+    margin-right: 1.5rem;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.reservation-type{
+    width: 20%;
+}
+.reservation-price{
+    width: 15%;
+    font-size: 1.1rem;
+}
+.reservation-nbjour{
+    width: 20%;
+}
+.reservation-total{
+    width: 15%;
+}
+.reservation-totals{
+    width: 15%;
+}
+.total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.total-title{
+    font-weight: bold;
+    font-size: 20px;
+    color: #D80E12;
+    margin-right: 20px;
+}
+.total-price{
+    color: #000000;
+    font-size: 17px;
 }
 }
