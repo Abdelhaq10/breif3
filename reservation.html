@@ -17,10 +17,10 @@
               
                 <ul class="list">
                      <img id="close" src="images/icons8-close-30.png">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Gallery</a></li>
-                    <li><a href="">Reservation</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Gallery.html">Gallery</a></li>
+                    <li><a href="./reservation.html">Reservation</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
                 </ul>
         </div>
         
@@ -29,15 +29,17 @@
            <section class="container">
                <div class="drop-block">
                 <div class="block">
-                    <label for="Bv">Boite vitesse : </label>
-                    <select class="dropdown" id="Bv">
+                    <label for="Bv">Gearbox : </label>
+                    <select class="dropdown" id="Bv" onchange="disableGear()">
+                        <option value="0">Choose Gearbox</option>
                         <option value="19">Automatique</option>
                         <option value="0">Manuelle</option>
                  </select>
                    </div>
                    <div class="block">
-                    <label for="Engine"> Engines : </label>
-                    <select class="dropdown" id="Engine">
+                    <label for="Engine"> Fuel: : </label>
+                    <select class="dropdown" id="Engine"onchange="disableFuel()">
+                        <option value="0">Choose Fuel</option>
                         <option value="5">Electrique</option>
                         <option value="9">Hybrid</option>
                         <option value="14">Essence</option>
@@ -89,10 +91,6 @@
            <section class="second-section">
                <div class="cars-book">
                 <h2 class="section-title">Reservation Book</h2>
-                
-               
-            <!-- <div class="cars-book">
-                <h2 class="section-title">Reservation Book</h2> -->
              <div class="reservation-block">
                  <span class="reservation-title reservation-type">Type</span>
                  <span class="reservation-title reservation-price">Price</span>

@@ -23,10 +23,7 @@ body{
     margin: 0px;
 }
 main{
-    /* width: 100%; */
-    /* height: 100vh; */
-    background-color: #242629;
-   
+    background-color: #242629; 
 }
 header{
     position:fixed;
@@ -37,11 +34,10 @@ header{
     display: flex;
     z-index: 10000;
     justify-content: space-between;
-    background: #D80E12;
+    background: rgb(155, 164, 170);
     align-items: center;
 }
 header .list{
-    /* position: relative; */
     display: flex;
     margin-right: 180px;
     align-items: center;
@@ -50,7 +46,6 @@ header .list{
 header .list li{
     list-style: none;
     margin-left: 50px;
-    /* display: inline-block; */
 }
 header .list li a{
     text-decoration: none;
@@ -66,8 +61,6 @@ header .list li :hover{letter-spacing: 2px;}
     margin-left: 50px;
     font-size: 25px;
     color: black;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-    /* font-family: ; */
 }
 .logo span{
     
@@ -76,7 +69,6 @@ header .list li :hover{letter-spacing: 2px;}
 }
 .background
 {
-    border: 1px solid rgb(25, 0, 255);
     background:#252b32;
     display: flex;
     flex-direction: column;
@@ -85,17 +77,17 @@ header .list li :hover{letter-spacing: 2px;}
     position: relative;
     gap: 40px;
     top: 29px;
-    /* height: ; */
-    padding: 70px 100px;
+    padding: 150px;
 }
 .content{
     position: relative;
     display: flex;
     text-align: center;
     gap: 25px;
-    width: 40%;
+    width: 80%;
     flex-direction: column;
     padding: 5px 10px;
+    
 }
 .quote{
     font-size: 45px;
@@ -155,8 +147,6 @@ header .list li :hover{letter-spacing: 2px;}
 }
 footer{
      padding: 50px 100px;
-    /* margin-top:733px ; */
-    /* height: 200px; */
     background-image: linear-gradient(25deg, #252b32, #b83b35, #a2342d, #252b32);
 }
 .footer{
@@ -206,12 +196,11 @@ footer{
     gap: 10px;
 }
 #popup{
-    position: relative;
+    position:relative;
     bottom: 400px;
     border: 1px solid gray;
     background-color: rgba(255, 255, 255, 0.5);
     width: 350px;
-    height: 200px;
     z-index: 1;
     display: none;
     box-shadow: 1px 1px 3px 3px rgb(107, 105, 105);

@@ -85,7 +85,7 @@ footer{
     position: fixed;
     padding: 27px 0px;
     width: 100%;
-    background: #D80E12;
+    background: grey;
 }
 header{
     position:relative;
@@ -157,7 +157,7 @@ header .list li :hover{letter-spacing: 2px;}
        padding: 20px;
    }
    .dropdown{
-    width: 150px;
+    width: 180px;
     height: 30px;
     font-size: 18px;
     border-radius: 5px;
@@ -367,10 +367,6 @@ header .list li :hover{letter-spacing: 2px;}
 
 .container{
     width: auto;
-    /* position: relative; */
-     /* top: 1px;  */
-    border: #D80E12 solid 2px;
-    /* background-color: aqua; */
     flex-wrap: wrap;
     flex-direction: column;
 }
@@ -385,7 +381,12 @@ header .list li :hover{letter-spacing: 2px;}
     gap: 20px;
 }
 
-
+.duree label{
+    font-size: 1.2rem;
+    font-family: 'Play', sans-serif;
+    padding-top: px;
+    font-weight: bold;
+}
 
 
 .reservation-title{

@@ -36,11 +36,10 @@ header{
     display: flex;
     z-index: 10000;
     justify-content: space-between;
-    background: #D80E12;
+    background: rgb(155, 164, 170);
     align-items: center;
 }
 header .list{
-    /* position: relative; */
     display: flex;
     margin-right: 180px;
     align-items: center;
@@ -49,7 +48,6 @@ header .list{
 header .list li{
     list-style: none;
     margin-left: 50px;
-    /* display: inline-block; */
 }
 header .list li a{
     text-decoration: none;
@@ -65,8 +63,6 @@ header .list li :hover{letter-spacing: 2px;}
     margin-left: 50px;
     font-size: 25px;
     color: black;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
-    /* font-family: ; */
 }
 .logo span{
     
@@ -74,7 +70,7 @@ header .list li :hover{letter-spacing: 2px;}
     color: white;
 }
 .front-fram{
-    background-image: url("./images/Untitled.jpg"); 
+    background-image: url("./images/pexels-garvin-st-villier-3311574.jpg"); 
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -99,18 +95,20 @@ header .list li :hover{letter-spacing: 2px;}
     font-size: 45px;
     font-family: 'Teko', sans-serif;
     color: white;
+    font-weight: bold;
 }
 .text{
     font-size: 25px;
     font-family: 'Play', sans-serif;
+    color: white;
 }
 .content a{
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     width: 150px;
     height: 30px;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: rgb(251, 247, 247);
     align-self: center;
     padding: 5px 10px;
     border-radius: 30px;
@@ -122,7 +120,6 @@ header .list li :hover{letter-spacing: 2px;}
 .center-fram{
     background:#242629;
     background-repeat: no-repeat;
-    /* height: 890px; */
     width: 100% !important;
     overflow-x: hidden;
     display: flex;
@@ -156,7 +153,6 @@ header .list li :hover{letter-spacing: 2px;}
     width: 200px;
     height: 200px; 
     border-radius: 50%;
-    /* background: url("./images/rent-icon.png") no-repeat; */
     background-color: #b6adae;
     background-size:contain;
     background-position: center;
@@ -200,6 +196,7 @@ header .list li :hover{letter-spacing: 2px;}
     font-size: 45px;
     font-family: 'Teko', sans-serif;
     color: white;
+    font-weight: bold;
 }
 .desc{
     font-family: 'Play', sans-serif;
@@ -212,7 +209,6 @@ header .list li :hover{letter-spacing: 2px;}
     background-color: #D80E12;
     height: 40px;
     width: 200px;
-    margin-bottom: 40px;
     padding: 10px 10px;
     text-align: center;
     font-family: 'Play', serif;
@@ -226,7 +222,6 @@ header .list li :hover{letter-spacing: 2px;}
     
 }
 footer{
-    /* margin-top:733px ; */
     height: 200px;
     background-image: linear-gradient(25deg, #252b32, #b83b35, #a2342d, #252b32);
 }
@@ -283,7 +278,22 @@ footer{
     width: 30px;
     height: 30px;
 }
-
+.parablock{
+    padding-bottom: 80px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'Teko', sans-serif;
+}
+.about
+{
+    width: 50%;
+    text-align: center;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: 25px;  
+    color: white;
+}
 
 @media (max-width:500px) {
     header{
@@ -344,6 +354,7 @@ footer{
     font-size: 27px;
     font-family: 'Teko', sans-serif;
     color: white;
+    font-weight: bold;
 }
 .text{
     font-size: 16px;
@@ -425,9 +436,10 @@ img{
     justify-content: center;
 }
 .second-title{
-    font-size: 45px;
+    font-size: 30px;
     font-family: 'Teko', sans-serif;
     color: white;
+    font-weight: bold;
 }
 .desc{
     font-family: 'Play', sans-serif;
@@ -440,7 +452,6 @@ img{
     background-color: #D80E12;
     height: 40px;
     width: 200px;
-    margin-bottom: 40px;
     padding: 10px 10px;
     text-align: center;
    
@@ -464,5 +475,10 @@ img{
     margin-top: 25px;
     width: 40px;
     height: auto;
+}
+.parablock{
+   
+    font-size: 17px;
+    font-family: 'Play', serif;
 }
 }

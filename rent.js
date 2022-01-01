@@ -46,7 +46,7 @@ var typePrice=document.createElement('span');
     let parseValueBv=parseFloat(valueBv);
     let parseValuEngine=parseFloat(valueEngine);
     
-   total+=(parsePrice + ((parsePrice * parseValueBv) / 100) + ((parsePrice * parseValuEngine) / 100)) * nbjour;
+   total+=Math.round((parsePrice + ((parsePrice * parseValueBv) / 100) + ((parsePrice * parseValuEngine) / 100)) * nbjour);
 //display resualt
    var typeTotal=document.createElement('span');
    typeTotal.innerText="£ " + total ;
@@ -63,7 +63,7 @@ var typePrice=document.createElement('span');
     totals+=priceC;
 }
 
-   document.getElementById('tot').innerText=totals;
+   document.getElementById('tot').innerText=totals + "£" ;
    console.log("totals : "+totals);
     console.log( "boite vitese: " + valueBv);
     console.log("engine: " + valueEngine);
@@ -83,6 +83,42 @@ console.log("total : " +total);
                 menu.style.display="none";
                 document.querySelector(".list").style.display="flex";
             });
+          
             
+                function disableGear()
+                {
+                    var selectgear = document.getElementById("Bv");
+                    var text =selectgear.options[selectgear.selectedIndex].text;
+                    console.log(text);
+                    if(text=='Automatique')
+                    {
+                        console.log(text);
+                        document.getElementById("moto").disabled=true;
+                        document.getElementById("citadine").disabled=true;
+                        document.getElementById("compact").disabled=true;
+                        document.getElementById("utilitaire").disabled=true;
+                        document.getElementById("enginCh").disabled=true;
+                    }
+                    else if(text=='Manuelle')
+                    {
+                        console.log( "m"+text);
+                        document.getElementById("moto").disabled=true;
+                        document.getElementById("citadine").disabled=false;
+                        document.getElementById("compact").disabled=false;
+                        document.getElementById("utilitaire").disabled=false;
+                        document.getElementById("enginCh").disabled=false;
+                        document.getElementById("berline").disabled=true;
+                        document.getElementById("camion").disabled=true;
+                    }
+                    else{
+                        document.getElementById("moto").disabled=false;
+                        document.getElementById("citadine").disabled=false;
+                        document.getElementById("compact").disabled=false;
+                        document.getElementById("utilitaire").disabled=false;
+                        document.getElementById("enginCh").disabled=false;
+                        document.getElementById("berline").disabled=false;
+                        document.getElementById("camion").disabled=false;
+                    }
+                }
                 document.getElementById("btn").addEventListener('click',rentcar);
 
