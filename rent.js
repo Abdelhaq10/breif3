@@ -121,4 +121,7 @@ console.log("total : " +total);
                     }
                 }
                 document.getElementById("btn").addEventListener('click',rentcar);
+                document.querySelector(".rent-btn").addEventListener('click',function(){
+                    alert("thanks for working with us");
+                })
 
