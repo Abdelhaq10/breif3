@@ -12,7 +12,6 @@ var isemailvalid=-1;
  var ismssgvalid=-1;
         fname.addEventListener("blur",function()
         {
-            var exp=/^[a-zA-Z0-9._-]+@[a-z0-9]+\.[a-z]{2,4}$/;
                 if(fname.value ==="")
                 {
                     fname.style.border = "2px solid red";

@@ -85,23 +85,26 @@ console.log("total : " +total);
             });
           
             
-                function disableGear()
+                function disable()
                 {
                     var selectgear = document.getElementById("Bv");
-                    var text =selectgear.options[selectgear.selectedIndex].text;
-                    console.log(text);
-                    if(text=='Automatique')
+                    var textG =selectgear.options[selectgear.selectedIndex].text;
+                    var selectFeul = document.getElementById("Engine");
+                    var textF =selectFeul.options[selectFeul.selectedIndex].text;
+                    console.log(textG);
+                    console.log(textF);
+                    if(textG=='Automatique' && textF=='Choose Fuel')
                     {
-                        console.log(text);
+                      
                         document.getElementById("moto").disabled=true;
                         document.getElementById("citadine").disabled=true;
                         document.getElementById("compact").disabled=true;
                         document.getElementById("utilitaire").disabled=true;
                         document.getElementById("enginCh").disabled=true;
                     }
-                    else if(text=='Manuelle')
+                    else if(textG=='Manuelle' && textF=='Choose Fuel')
                     {
-                        console.log( "m"+text);
+                        
                         document.getElementById("moto").disabled=true;
                         document.getElementById("citadine").disabled=false;
                         document.getElementById("compact").disabled=false;
@@ -110,7 +113,139 @@ console.log("total : " +total);
                         document.getElementById("berline").disabled=true;
                         document.getElementById("camion").disabled=true;
                     }
-                    else{
+                    if(textF=='Electrique' && textG=='Choose Gearbox')
+                    {
+                       
+                        document.getElementById("moto").disabled=false;
+                        document.getElementById("citadine").disabled=false;
+                        document.getElementById("compact").disabled=true;
+                        document.getElementById("utilitaire").disabled=true;
+                        document.getElementById("enginCh").disabled=true;
+                        document.getElementById("berline").disabled=true;
+                        document.getElementById("camion").disabled=true;
+                    }
+                    else if(textF=='Hybrid' && textG=='Choose Gearbox')
+                    {
+                        
+                        document.getElementById("moto").disabled=true;
+                        document.getElementById("citadine").disabled=false;
+                        document.getElementById("compact").disabled=false;
+                        document.getElementById("utilitaire").disabled=true;
+                        document.getElementById("enginCh").disabled=true;
+                        document.getElementById("berline").disabled=false;
+                        document.getElementById("camion").disabled=true;
+                    }
+                    else if(textF=='Essence' && textG=='Choose Gearbox')
+                    {
+                        
+                        document.getElementById("moto").disabled=false;
+                        document.getElementById("citadine").disabled=false;
+                        document.getElementById("compact").disabled=false;
+                        document.getElementById("utilitaire").disabled=true;
+                        document.getElementById("enginCh").disabled=false;
+                        document.getElementById("berline").disabled=false;
+                        document.getElementById("camion").disabled=true;
+                    }
+                    else if(textF=='Diesel' && textG=='Choose Gearbox')
+                    {
+                        
+                        document.getElementById("moto").disabled=true;
+                        document.getElementById("citadine").disabled=false;
+                        document.getElementById("compact").disabled=false;
+                        document.getElementById("utilitaire").disabled=false;
+                        document.getElementById("enginCh").disabled=false;
+                        document.getElementById("berline").disabled=false;
+                        document.getElementById("camion").disabled=false;
+                    }
+                    else if(textF=='Electrique' && textG=='Manuelle')
+                    {
+                        
+                        document.getElementById("moto").disabled=true;
+                        document.getElementById("citadine").disabled=false;
+                        document.getElementById("compact").disabled=true;
+                        document.getElementById("utilitaire").disabled=true;
+                        document.getElementById("enginCh").disabled=true;
+                        document.getElementById("berline").disabled=true;
+                        document.getElementById("camion").disabled=true;
+                    }
+                    else if(textF=='Hybrid' && textG=='Manuelle')
+                    {
+                        
+                        document.getElementById("moto").disabled=true;
+                        document.getElementById("citadine").disabled=false;
+                        document.getElementById("compact").disabled=false;
+                        document.getElementById("utilitaire").disabled=true;
+                        document.getElementById("enginCh").disabled=true;
+                        document.getElementById("berline").disabled=true;
+                        document.getElementById("camion").disabled=true;
+                    }
+                    else if(textF=='Essence' && textG=='Manuelle')
+                    {
+                        
+                        document.getElementById("moto").disabled=true;
+                        document.getElementById("citadine").disabled=false;
+                        document.getElementById("compact").disabled=false;
+                        document.getElementById("utilitaire").disabled=false;
+                        document.getElementById("enginCh").disabled=false;
+                        document.getElementById("berline").disabled=true;
+                        document.getElementById("camion").disabled=true;
+                    }
+                    else if(textF=='Diesel' && textG=='Manuelle')
+                    {
+                        
+                        document.getElementById("moto").disabled=true;
+                        document.getElementById("citadine").disabled=false;
+                        document.getElementById("compact").disabled=false;
+                        document.getElementById("utilitaire").disabled=false;
+                        document.getElementById("enginCh").disabled=false;
+                        document.getElementById("berline").disabled=true;
+                        document.getElementById("camion").disabled=true;
+                    }
+                    else if(textF=='Electrique' && textG=='Automatique')
+                    {
+                        
+                        document.getElementById("moto").disabled=true;
+                        document.getElementById("citadine").disabled=true;
+                        document.getElementById("compact").disabled=true;
+                        document.getElementById("utilitaire").disabled=true;
+                        document.getElementById("enginCh").disabled=true;
+                        document.getElementById("berline").disabled=true;
+                        document.getElementById("camion").disabled=true;
+                    }
+                    else if(textF=='Hybrid' && textG=='Automatique')
+                    {
+                        
+                        document.getElementById("moto").disabled=true;
+                        document.getElementById("citadine").disabled=true;
+                        document.getElementById("compact").disabled=true;
+                        document.getElementById("utilitaire").disabled=true;
+                        document.getElementById("enginCh").disabled=true;
+                        document.getElementById("berline").disabled=false;
+                        document.getElementById("camion").disabled=true;
+                    }
+                    else if(textF=='Essence' && textG=='Automatique')
+                    {
+                        
+                        document.getElementById("moto").disabled=true;
+                        document.getElementById("citadine").disabled=true;
+                        document.getElementById("compact").disabled=true;
+                        document.getElementById("utilitaire").disabled=true;
+                        document.getElementById("enginCh").disabled=true;
+                        document.getElementById("berline").disabled=false;
+                        document.getElementById("camion").disabled=true;
+                    }
+                    else if(textF=='Diesel' && textG=='Automatique')
+                    {
+                        
+                        document.getElementById("moto").disabled=true;
+                        document.getElementById("citadine").disabled=true;
+                        document.getElementById("compact").disabled=true;
+                        document.getElementById("utilitaire").disabled=true;
+                        document.getElementById("enginCh").disabled=true;
+                        document.getElementById("berline").disabled=false;
+                        document.getElementById("camion").disabled=false;
+                    }
+                    else if(textF=='Choose Fuel' && textG=='Choose Gearbox'){
                         document.getElementById("moto").disabled=false;
                         document.getElementById("citadine").disabled=false;
                         document.getElementById("compact").disabled=false;
