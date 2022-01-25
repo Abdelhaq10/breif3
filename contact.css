@@ -13,6 +13,7 @@ body{
 .nav-log{
     display: flex;
     gap: 40px;
+        align-items: center;
 }
 ::-webkit-scrollbar{display: none;}
 *{
@@ -35,8 +36,8 @@ header{
     display: flex;
     z-index: 10000;
     justify-content: space-between;
-    background: rgb(155, 164, 170);
-    align-items: center;
+        background: rgb(155, 164, 170);
+   
 }
 header .list{
     display: flex;
@@ -235,10 +236,10 @@ footer{
     width: 30px;
     height: 30px;
 }
-@media (max-width:560px) {
+@media (max-width:480px) {
     header{
         height: 70px;
-        background:grey;
+            background: rgb(155, 164, 170);
     }
       header .logo{
          width: 50px;
@@ -343,7 +344,11 @@ footer{
     height: auto;
 }
 .nav-log{
-    gap: 380px;
+      display: flex;
+    width: 98%;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 #close{
    position: relative;
@@ -358,4 +363,7 @@ footer{
     bottom: 450px;
 
 }
+}
+footer{
+    padding: 20px;
 }

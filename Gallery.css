@@ -84,7 +84,7 @@ footer{
     position: fixed;
     padding: 27px 0px;
     width: 100%;
-    background: grey;
+       background: rgb(155, 164, 170);
 }
 header{
     position:relative;
@@ -94,7 +94,7 @@ header{
     height: 100px;
     display: flex;
     z-index: 10000;
-    align-items: center;
+   /* align-items: center;*/
     justify-content: space-between;
   
     
@@ -102,7 +102,6 @@ header{
 header .list{
     display: flex;
     margin-right: 180px;
-    align-items: center;
     justify-content:space-around ; 
 }
 header .list li{
@@ -154,6 +153,33 @@ header .list li :hover{letter-spacing: 2px;}
     flex-wrap: wrap;
     color: white;
    }
+   #dropdown{
+    width: 180px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 4px 4px #ccc;
+   }
+   .filter-block{
+       border: #D80E12 solid 2px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 30px;
+       gap: 160px;
+   }
+   .filter{
+       display: flex;
+       flex-direction: row;
+       border: #af9697 solid 2px;
+       gap: 40px;
+       justify-content: center;
+       color: white;
+   }
+   .filter label{
+       font-size: 22px;
+       font-family: 'Teko', sans-serif;
+   }
   .card{
       display: flex;
       border: grey solid;
@@ -169,35 +195,36 @@ header .list li :hover{letter-spacing: 2px;}
   .pic{
       width: 90%;
       height: 240px;
+      object-fit: scale-down;
   }
   .pic1{
     background: url('./images/cars/pexels-cottonbro-4550411.jpg') no-repeat;
-    background-size: cover;
+    background-size:contain ;
     background-position: center;
 }
 .pic2{
     background: url('./images/cars/pexels-ishan-kulshrestha-9334971.jpg') no-repeat;
-    background-size: cover;
+   background-size:contain ;
     background-position: center;
 }
 .pic3{
     background: url('./images/cars/pexels-jae-park-3764986.jpg') no-repeat;
-    background-size: cover;
+        background-size:contain ;
     background-position: center;
 }
 .pic4{
     background: url('./images/cars/pexels-manuela-kohl-80584.jpg') no-repeat;
-    background-size: cover;
+    background-size:contain ;
     background-position: center;
 }
 .pic5{
     background: url('./images/moto/pexels-shubhankar-4117540.jpg') no-repeat;
-    background-size: cover;
+   background-size:contain ;
     background-position: center;
 }
 .pic6{
     background: url('./images/moto/pexels-sourav-mishra-2396050.jpg') no-repeat;
-    background-size: cover;
+    background-size:contain ;
     background-position: center;
 }
 .pic7{
@@ -207,37 +234,37 @@ header .list li :hover{letter-spacing: 2px;}
 }
 .pic8{
     background: url('./images/moto/pexels-sourav-mishra-2798288.jpg') no-repeat;
-    background-size: cover;
+    background-size:contain ;
     background-position: center;
 }
 .pic9{
     background: url('./images/utilitaire/utilitaire1.jpg') no-repeat;
-    background-size: cover;
+    background-size:contain ;
     background-position: center;
 }
 .pic10{
     background: url('./images/utilitaire/utilitaire2.jpg') no-repeat;
-    background-size: cover;
+  background-size:contain ;
     background-position: center;
 }
 .pic11{
     background: url('./images/utilitaire/utilitaire3.jpg') no-repeat;
-    background-size: cover;
+   background-size:contain ;
     background-position: center;
 }
 .pic12{
     background: url('./images/utilitaire/utilitaire4.jpg') no-repeat;
-    background-size: cover;
+   background-size:contain ;
     background-position: center;
 }
 .pic13{
     background: url('./images/machines/c6.jfif') no-repeat;
-    background-size: cover;
+    background-size:contain ;
     background-position: center;
 }
 .pic14{
     background: url('./images/machines/c7.jpg') no-repeat;
-    background-size: cover;
+    background-size:contain ;
     background-position: center;
 }
 .pic15{
@@ -247,27 +274,27 @@ header .list li :hover{letter-spacing: 2px;}
 }
 .pic16{
     background: url('./images//machines/pexels-pixabay-416988.jpg') no-repeat;
-    background-size: cover;
+    background-size:contain ;
     background-position: center;
 }
 .pic17{
     background: url('./images/Trucks/t1.jpg') no-repeat;
-    background-size: cover;
+    background-size:contain ;
     background-position: center;
 }
 .pic18{
     background: url('./images/Trucks/t3.jpg') no-repeat;
-    background-size: cover;
+    background-size:contain ;
     background-position: center;
 }
 .pic19{
     background: url('./images/Trucks/t6.jpg') no-repeat;
-    background-size: cover;
+    background-size:contain ;
     background-position: center;
 }
 .pic20{
     background: url('./images/Trucks/t7.jpg') no-repeat;
-    background-size: cover;
+    background-size:contain ;
     background-position: center;
 }
 .Title{
@@ -306,10 +333,10 @@ header .list li :hover{letter-spacing: 2px;}
  .reserve a:hover{
     background-color:#D80E12;
 }
-@media (max-width:560px) {
+@media (max-width:480px) {
     header{
         /* height: 70px; */
-        background:grey;
+            background: rgb(155, 164, 170);
     }
       header .logo{
          width: 50px;
@@ -357,7 +384,11 @@ header .list li :hover{letter-spacing: 2px;}
     height: auto;
 }
 .nav-log{
-    gap: 380px;
+     display: flex;
+    width: 98%;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 #close{
    position: relative;

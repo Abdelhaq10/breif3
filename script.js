@@ -97,3 +97,6 @@ var isemailvalid=-1;
                 menu.style.display="none";
                 document.querySelector(".list").style.display="flex";
             });
+           
+               
+
