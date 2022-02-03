@@ -21,7 +21,7 @@ var selectBv = document.getElementById('Bv');
 var valueBv =selectBv.options[selectBv.selectedIndex].value;
 var selectEngine = document.getElementById('Engine');
 var valueEngine =selectEngine.options[selectEngine.selectedIndex].value;
-if(nbjour>=0)
+if(nbjour>0)
         {
 //create element to display results
 var typeName=document.createElement('span');

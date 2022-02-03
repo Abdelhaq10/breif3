@@ -464,7 +464,7 @@ img{
 #menu{
     margin-top: 10px;
     width: 40px;
-    height: auto;
+    height: 40px;
 }
 .nav-log{
      display: flex;
@@ -472,6 +472,7 @@ img{
     gap: 40px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 #close{
     margin-left :100px;

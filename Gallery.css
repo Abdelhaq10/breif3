@@ -192,110 +192,14 @@ header .list li :hover{letter-spacing: 2px;}
       padding: 15px;
       color: white;
   }
-  .pic{
-      width: 90%;
+
+.pic{
+    width: 240px;
       height: 240px;
-      object-fit: scale-down;
-  }
-  .pic1{
-    background: url('./images/cars/pexels-cottonbro-4550411.jpg') no-repeat;
-    background-size:contain ;
-    background-position: center;
-}
-.pic2{
-    background: url('./images/cars/pexels-ishan-kulshrestha-9334971.jpg') no-repeat;
+    object-fit: inherit;
+  /*  background: url('./images/cars/pexels-ishan-kulshrestha-9334971.jpg') no-repeat;
    background-size:contain ;
-    background-position: center;
-}
-.pic3{
-    background: url('./images/cars/pexels-jae-park-3764986.jpg') no-repeat;
-        background-size:contain ;
-    background-position: center;
-}
-.pic4{
-    background: url('./images/cars/pexels-manuela-kohl-80584.jpg') no-repeat;
-    background-size:contain ;
-    background-position: center;
-}
-.pic5{
-    background: url('./images/moto/pexels-shubhankar-4117540.jpg') no-repeat;
-   background-size:contain ;
-    background-position: center;
-}
-.pic6{
-    background: url('./images/moto/pexels-sourav-mishra-2396050.jpg') no-repeat;
-    background-size:contain ;
-    background-position: center;
-}
-.pic7{
-    background: url('./images/moto/pexels-sourav-mishra-2747543.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.pic8{
-    background: url('./images/moto/pexels-sourav-mishra-2798288.jpg') no-repeat;
-    background-size:contain ;
-    background-position: center;
-}
-.pic9{
-    background: url('./images/utilitaire/utilitaire1.jpg') no-repeat;
-    background-size:contain ;
-    background-position: center;
-}
-.pic10{
-    background: url('./images/utilitaire/utilitaire2.jpg') no-repeat;
-  background-size:contain ;
-    background-position: center;
-}
-.pic11{
-    background: url('./images/utilitaire/utilitaire3.jpg') no-repeat;
-   background-size:contain ;
-    background-position: center;
-}
-.pic12{
-    background: url('./images/utilitaire/utilitaire4.jpg') no-repeat;
-   background-size:contain ;
-    background-position: center;
-}
-.pic13{
-    background: url('./images/machines/c6.jfif') no-repeat;
-    background-size:contain ;
-    background-position: center;
-}
-.pic14{
-    background: url('./images/machines/c7.jpg') no-repeat;
-    background-size:contain ;
-    background-position: center;
-}
-.pic15{
-    background: url('./images/machines/pexels-anamul-rezwan-1078884.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.pic16{
-    background: url('./images//machines/pexels-pixabay-416988.jpg') no-repeat;
-    background-size:contain ;
-    background-position: center;
-}
-.pic17{
-    background: url('./images/Trucks/t1.jpg') no-repeat;
-    background-size:contain ;
-    background-position: center;
-}
-.pic18{
-    background: url('./images/Trucks/t3.jpg') no-repeat;
-    background-size:contain ;
-    background-position: center;
-}
-.pic19{
-    background: url('./images/Trucks/t6.jpg') no-repeat;
-    background-size:contain ;
-    background-position: center;
-}
-.pic20{
-    background: url('./images/Trucks/t7.jpg') no-repeat;
-    background-size:contain ;
-    background-position: center;
+    background-position: center;*/
 }
 .Title{
     font-family: 'Play', serif;
@@ -335,7 +239,7 @@ header .list li :hover{letter-spacing: 2px;}
 }
 @media (max-width:480px) {
     header{
-        /* height: 70px; */
+      height: 75px;
             background: rgb(155, 164, 170);
     }
       header .logo{
@@ -376,12 +280,15 @@ header .list li :hover{letter-spacing: 2px;}
       font-style: oblique;
       font-family: Georgia, 'Times New Roman', Times, serif;
   }
+  .content{
+        padding: 9px 0px;
+  }
   #menu, #close{
     display: block;
 }
 #menu{
-    width: 45px;
-    height: auto;
+    width: 40px;
+    height: 40px;
 }
 .nav-log{
      display: flex;
@@ -389,6 +296,7 @@ header .list li :hover{letter-spacing: 2px;}
     gap: 40px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 #close{
    position: relative;

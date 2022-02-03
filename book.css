@@ -320,8 +320,7 @@ header .list li :hover{letter-spacing: 2px;}
 }
    @media (max-width:560px) {
     header{
-        /* height: 70px; */
-        background:grey;
+         height: 70px;
     }
       header .logo{
          width: 50px;
@@ -329,7 +328,9 @@ header .list li :hover{letter-spacing: 2px;}
          margin-left: 12px;
          padding: 10px 0px;
      }
-   
+   .content{
+        padding: 10px 0px;
+   }
       header .list{
           border: 1px solid black;
           position: fixed;
@@ -365,8 +366,8 @@ header .list li :hover{letter-spacing: 2px;}
     display: block;
 }
 #menu{
-    width: 45px;
-    height: auto;
+    width: 40px;
+    height: 40px;
 }
 .nav-log{
     display: flex;
@@ -374,6 +375,7 @@ header .list li :hover{letter-spacing: 2px;}
     gap: 40px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 #close{
    position: relative;
